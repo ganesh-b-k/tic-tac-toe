@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+  }
+
+  #gameContainer{
+    font-family: "Permanent Marker",cursive;
+    text-align: center;
+    margin-top: 15vh;
+  }
+  #cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 225px;
+    margin: auto;
+  }
+  .cell:hover{
+    transform: scale(1.05);
+    transition-duration: 400ms;
+    background-color: aquamarine;
+  }
+  button{
+    width: 8vw;
+    height: 5vh;
+    border-radius:5px;
+    background-color:cadetblue; 
+  }
+  button:hover{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+    background-color: bisque;
+  }
+  @media screen and (max-width: 750px) {
+     button {
+      font-size: 11px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 450px) {
+    button {
+      font-size: 9px;
+    }
+  
+  }
+
+
